@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portf01io Website</title>
-    <link rel="stylesheet" href="Style.css">
-    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css" rel="stylesheet">
 </head>
 <body>
-    <header class="header" >
+    <header class="header">
       <a href="#home" class="logo">
         Gal<span>io</span>
       </a>  
@@ -22,11 +22,12 @@
       </nav>
       <button class="gradient-btn">Contact me</button>
     </header>
-  <section class="home" id="home">
-    <div class="home-content">
-        <h1>hi,it´s<span>Felipe</span></h1>
+
+    <section class="home" id="home">
+      <div class="home-content">
+          <h1>Hi, it´s <span>Felipe</span></h1>
           <h3>
-               I´am <span>Web Developer </span>
+               I´m <span>Web Developer</span>
           </h3>
           <p>Digital and multimedia designer with specialization in web design and UX/UI.
           </p>
@@ -36,8 +37,7 @@
               </a>
 
               <a href="#">
-                  <i class="bx
-                   bxl-linkedin-square"></i>
+                  <i class="bx bxl-linkedin-square"></i>
               </a>
 
               <a href="#">
@@ -47,24 +47,22 @@
               <a href="#">
                   <i class="bx bxl-twitter"></i>
               </a>
-        </div>
+          </div>
 
-        <div class="btn-group">
+          <div class="btn-group">
               <a href="#" class="btn">Hire</a>
-              <a href="#contact" 
-              class="btn">Contact</a>
-        </div>      
-    </div>
+              <a href="#contact" class="btn">Contact</a>
+          </div>      
+      </div>
 
-    <div class="home-img">
-      <img src="Imagenes/me.png" alt="">
-    </div>  
-
+      <div class="home-img">
+        <img src="imagenes/me.png" alt="">
+      </div>  
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
-       <img src="Imagenes/me.png" alt="">
+       <img src="imagenes/me.png" alt="">
       </div>
 
       <div class="about-content">
@@ -75,65 +73,100 @@
     </section>
 
     <section class="services" id="services">
-
       <h2 class="heading">Services</h2>
 
-
-        <div class="services-container">
-          <div class="service-box">
-            <div class="service-info">
-              <i class="bx bxl-figma"></i>
-              <h4>UI / UX Design</h4>
-              <p>As a frontend developer passionate about user experience, I am dedicated to creating intuitive and visually attractive digital interfaces. I combine my HTML, CSS, and JavaScript skills with UX design principles to build functional and enjoyable-to-use products.</p>
-            </div> 
+      <div class="services-container">
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bxl-figma"></i>
+            <h4>UI / UX Design</h4>
+            <p>As a frontend developer passionate about user experience, I am dedicated to creating intuitive and visually attractive digital interfaces. I combine my HTML, CSS, and JavaScript skills with UX design principles to build functional and enjoyable-to-use products.</p>
           </div> 
-      
-      
-            <div class="service-box">
-              <div class="service-info">
-                <i class="bx bx-code"></i>
-                <h4>Frontend Development</h4>
-                <p>As a frontend developer with a passion for user experience, I am dedicated to creating intuitive and visually engaging digital interfaces. I combine my HTML, CSS, and JavaScript skills with UX design principles to build products that are not only functional, but also enjoyable to use. My goal is for every interaction with an application to be a positive experience for the user.</p>
-              </div>
-            </div>  
-      
-            <div class="service-box">
-              <div class="service-info">
-                <i class="bx bx-code-curly"></i>
-                <h4>Backend Development</h4>
-                <p>Backend developer with experience in designing and building scalable and robust web applications. I specialize in the development of RESTful APIs, database optimization and the implementation of efficient backend solutions.</p>  
-              </div>  
-            </div>
-
-                        <div class="service-box">
-              <div class="service-info">
-                <i class="bx bx-code-curly"></i>
-                <h4>Backend Development</h4>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquam perspiciatis dolore voluptates a consectetur corrupti cupiditate ipsum nam atque.</p>  
-              </div>  
-            </div>
         </div> 
+      
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code"></i>
+            <h4>Frontend Development</h4>
+            <p>As a frontend developer with a passion for user experience, I am dedicated to creating intuitive and visually engaging digital interfaces. I combine my HTML, CSS, and JavaScript skills with UX design principles to build products that are not only functional, but also enjoyable to use. My goal is for every interaction with an application to be a positive experience for the user.</p>
+          </div>
+        </div>  
+      
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code-curly"></i>
+            <h4>Backend Development</h4>
+            <p>Backend developer with experience in designing and building scalable and robust web applications. I specialize in the development of RESTful APIs, database optimization and the implementation of efficient backend solutions.</p>  
+          </div>  
+        </div>
+
+        <div class="service-box">
+          <div class="service-info">
+            <i class="bx bx-code-curly"></i>
+            <h4>Backend Development</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Omnis, aliquam perspiciatis dolore voluptates a consectetur corrupti cupiditate ipsum nam atque.</p>  
+          </div>  
+        </div>
+      </div> 
    </section>
 
-    <div class="projects" id="projects">
+   <!-- PROJECTS -->
+   <section class="projects" id="projects">
+      <h2 class="heading">Projects</h2>
 
-        <h2 class="heading">Projects</h2>
+      <div class="projects-box">
 
-        <div class="projects-box">
+        <!-- PROJECT 1 -->
+        <div class="project-card" id="card1">
+            <img src="imagenes/spl.gif" alt="">
+            <h3>project 1</h3>
+            <p>The Splend app helps children with type 1 diabetes understand and manage their health in a fun way.</p>
+            <div class="btn open-project1">review project</div>
+        </div> 
+            
+        <!-- PROJECT 2 -->
+        <div class="project-card" id="card2">
+            <img src="imagenes/Karagabi.PNG" alt="">
+            <h3>project 2</h3>
+            <p>The Karagabí project immerses participants in the history of the origin of water according to the Embera Katío culture, through a sensory experience that combines shadows and sounds to create an emotional connection with ancestral traditions.</p>
+            <div class="btn open-project2">review project</div>
+        </div> 
 
-            <div class="project-card">
-                <img src="Imagenes/spl.gif" alt="">
+        <!-- PROJECT 3 -->
+        <div class="project-card" id="card3">
+            <img src="imagenes/Septimazo.png" alt="">
+            <h3>project 3</h3>
+            <p>Your complete guide to discover the best events of the Seventh Race. Never miss a concert, exhibition or fair again!</p>
+            <div class="btn open-project3">review project</div>
 
-                <h3>project 1</h3>
+        </div> 
 
-                <p>The Splend app helps children with type 1 diabetes understand and manage their health in a fun way.</p>
-                <div class="btn open-project1">review project</div>
-            <div id="modal-project1" class="modal">
+      </div>
+<!-- MODAL PROJECT 1 -->
+<div id="modal-project1" class="modal">
   <div class="modal-content">
-    <span class="close">&times;</span>
-
+    <span class="close close1">&times;</span>
     <h2>Project 1 – Splend App</h2>
-    <img src="imagenes/spl.gif" alt="">
+
+    <!-- CARRUSEL PROJECT 1 -->
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="imagenes/2Splend (1).PNG" alt="Splend screen 1">
+        </div>
+        <div class="carousel-slide">
+          <img src="Imagenes/2Splend (2).PNG" alt="Splend screen 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="imagenes/spl.gif" alt="Splend screen 3">
+        </div>
+      </div>
+
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+
     <p>
       The Splend app helps children with type 1 diabetes understand and manage
       their health in a fun way. Here you can add more details, images, or
@@ -141,117 +174,148 @@
     </p>
   </div>
 </div>
-            </div> 
-            
-      
-            <div class="project-card">
-
-                <img src="Imagenes/Karagabi.PNG" alt="">
-
-                <h3>project 2</h3>
-                <p>The Karagabí project immerses participants in the history of the origin of water according to the Embera Katío culture, through a sensory experience that combines shadows and sounds to create an emotional connection with ancestral traditions.</p>
-                <div class="btn">review project</div>
-            </div> 
 
 
-            <div class="project-card">
+<!-- MODAL PROJECT 2 -->
+<div id="modal-project2" class="modal">
+  <div class="modal-content">
+    <span class="close close2">&times;</span>
+    <h2>Project 2 – Karagabí</h2>
 
-                <img src="Imagenes/Septimazo.png" alt="">
+    <!-- CARRUSEL PROJECT 2 -->
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
 
-                <h3>project 3</h3>
-                <p>Your complete guide to discover the best events of the Seventh Race. Never miss a concert, exhibition or fair again!</p>
-                <div class="btn">review project</div>
-            </div> 
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="imagenes/Karagabi3.PNG" alt="Karagabí screen 1">
         </div>
+        <div class="carousel-slide">
+          <img src="imagenes/Karagabi2.PNG" alt="Karagabí screen 2">
+        </div>
+        <div class="carousel-slide">
+          <img src="imagenes/Karagabi1.PNG" alt="Karagabí screen 3">
+        </div>
+      </div>
 
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
 
+    <p>
+      The Karagabí project immerses participants in the history of the origin 
+      of water according to the Embera Katío culture, through a sensory experience 
+      that combines shadows and sounds to create an emotional connection with 
+      ancestral traditions.
+    </p>
+  </div>
+</div>
 
-  </section>
+<!-- MODAL PROJECT 3 -->
+<div id="modal-project3" class="modal">
+  <div class="modal-content">
+    <span class="close close3">&times;</span>
+    <h2>Project 3 – El Septimazo</h2>
+
+    <!-- CARRUSEL -->
+    <div class="carousel">
+      <button class="carousel-btn prev">&#10094;</button>
+
+      <div class="carousel-track">
+        <div class="carousel-slide">
+          <img src="imagenes/2Splend (1).PNG" alt="Vista 1 Septimazo">
+        </div>
+        <div class="carousel-slide">
+          <img src="Imagenes/2Splend (2).PNG" alt="Vista 2 Septimazo">
+        </div>
+        <div class="carousel-slide">
+          <img src="Imagenes/pantallas.jpeg" alt="Vista 3 Septimazo">
+        </div>
+      </div>
+
+      <button class="carousel-btn next">&#10095;</button>
+    </div>
+
+    <p>
+      El Septimazo is your complete guide to discover the best events along 
+      Carrera Séptima — concerts, exhibitions, fairs, and cultural shows.
+      A digital tool that helps you never miss what’s happening in the heart 
+      of Bogotá’s cultural street.
+    </p>
+  </div>
+</div>
+
+   </section>
 
    <section class="contact" id="contact">
-      <h2 class="heading">Contact <span>me</span>
-      </h2>
+      <h2 class="heading">Contact <span>me</span></h2>
 
       <form action="#">
 
-            <div class="input-group">
-                <div class="input-box">
-                    <input type="text" 
-                    placeholder="Full name">
-                    <input type="email" 
-                    placeholder="Email">
-                </div>
+        <div class="input-group">
+          <div class="input-box">
+            <input type="text" placeholder="Full name">
+            <input type="email" placeholder="Email">
+          </div>
 
-                <div class="input-box">
-                   <input type="number"
-                    placeholder="Phone number">
-                    <input type="text"
-                    placeholder="Subject">
-                </div>
-            </div>
-                <div class="input-group-2">
-                    <textarea name="" id="" 
-                    placeholder="your message"
-                    ></textarea>
-                    <input type="sumbit" value="send 
-                     message" class="btn">
-                </div>
-            </div>
+          <div class="input-box">
+            <input type="number" placeholder="Phone number">
+            <input type="text" placeholder="Subject">
+          </div>
+        </div>
+
+        <div class="input-group-2">
+          <textarea name="" id="" placeholder="your message"></textarea>
+          <input type="submit" value="send message" class="btn">
+        </div>
+
       </form>
    </section>
 
    <footer class="footer">
       <div class="social-icons">
           <a href="#">
-          <i class="bx bxl-github"></i> 
+            <i class="bx bxl-github"></i> 
           </a>
 
           <a href="#">
-          <i class="bx
-           bxl-linkedin-square"></i>
+            <i class="bx bxl-linkedin-square"></i>
           </a>
 
           <a href="#">
-          <i class="bx bxl-instagram-alt"></i>
+            <i class="bx bxl-instagram-alt"></i>
           </a>
 
           <a href="#">
-          <i class="bx bxl-twitter"></i>
+            <i class="bx bxl-twitter"></i>
           </a>
-        </div>   
+      </div>   
 
-        <ul class="list">
-            <li>
-            <a href="#">FAQ</a>
-            </li>
-
-            <li>
-            <a href="#services">Services</a>
-            </li>
-
-            <li>
-            <a href="#about">About Me</a>
-            </li>
-
-            <li>
-           <a href="#projects">Projects</a>
-            </li>
-
+      <ul class="list">
           <li>
-          <a href="#contact">Contact</a>
+            <a href="#">FAQ</a>
           </li>
-        </ul>
+          <li>
+            <a href="#services">Services</a>
+          </li>
+          <li>
+            <a href="#about">About Me</a>
+          </li>
+          <li>
+            <a href="#projects">Projects</a>
+          </li>
+          <li>
+            <a href="#contact">Contact</a>
+          </li>
+      </ul>
 
-          <p class="copyright">
-          &copy; 2021 Felipe Rios. All rights reserved.
-        </p>
+      <p class="copyright">
+        &copy; 2021 Felipe Rios. All rights reserved.
+      </p>
    </footer>
-   
 
-
-
-    <script src="script.js"></script>
+   <script src="script.js"></script>
 </body>
 </html>
+
 
 
