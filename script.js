@@ -1,30 +1,94 @@
-document.addEventListener('DOMContentLoaded', () => {
-    let menuIcon = document.querySelector('#menu-icon');
-    let navbar = document.querySelector('.navbar');
-
-    menuIcon.onclick = () => {
-        menuIcon.classList.toggle('bx-x');
-        navbar.classList.toggle('active');
-    };
-});
-// MODAL PROJECT 1
-const modal1 = document.getElementById("modal-project1");
-const openBtn1 = document.querySelector(".open-project1");
-const closeBtn1 = modal1.querySelector(".close");
-
-// Abrir modal
-openBtn1.addEventListener("click", () => {
-  modal1.style.display = "flex"; 
-});
-
-// Cerrar modal con X
-closeBtn1.addEventListener("click", () => {
-  modal1.style.display = "none";
-});
-
-// Cerrar al hacer clic fuera del contenido
-window.addEventListener("click", (e) => {
-  if (e.target === modal1) {
-    modal1.style.display = "none";
+document.addEventListener("DOMContentLoaded", () => {
+  // ========= FUNCIONES GENERALES PARA MODALES =========
+  function openModal(modal) {
+    if (!modal) return;
+    modal.style.display = "flex";
+    requestAnimationFrame(() => {
+      modal.classList.add("show");
+    });
   }
+
+  function closeModal(modal) {
+    if (!modal) return;
+    modal.classList.remove("show");
+    setTimeout(() => {
+      modal.style.display = "none";
+    }, 250); // que coincida con la transición del CSS
+  }
+
+  /**
+   * Conecta un modal con sus botones:
+   * @param {string} modalId - id del modal (sin #)
+   * @param {string} openBtnClass - clase del botón que abre (sin .)
+   * @param {string} closeInnerClass - clase del botón de cerrar dentro del modal (sin .)
+   */
+  function setupModal(modalId, openBtnClass, closeInnerClass) {
+    const modal = document.getElementById(modalId);
+    const openBtns = document.querySelectorAll("." + openBtnClass);
+    if (!modal || openBtns.length === 0) return;
+
+    const closeBtn = modal.querySelector("." + closeInnerClass);
+    if (!closeBtn) return;
+
+    // Abrir
+    openBtns.forEach((btn) => {
+      btn.addEventListener("click", () => openModal(modal));
+    });
+
+    // Cerrar con la X
+    closeBtn.addEventListener("click", () => closeModal(modal));
+
+    // Cerrar clickeando fuera del contenido
+    window.addEventListener("click", (e) => {
+      if (e.target === modal) {
+        closeModal(modal);
+      }
+    });
+  }
+
+  // ========= CONFIGURAR MODALES 1, 2 y 3 =========
+  setupModal("modal-project1", "open-project1", "close1");
+  setupModal("modal-project2", "open-project2", "close2");
+  setupModal("modal-project3", "open-project3", "close3");
+
+  // ========= CARRUSELES EN TODOS LOS MODALES =========
+  function initAllCarousels() {
+    const carousels = document.querySelectorAll(".modal .carousel");
+
+    carousels.forEach((carousel) => {
+      const track = carousel.querySelector(".carousel-track");
+      const slides = Array.from(carousel.querySelectorAll(".carousel-slide"));
+      const prevBtn = carousel.querySelector(".carousel-btn.prev");
+      const nextBtn = carousel.querySelector(".carousel-btn.next");
+
+      if (!track || slides.length === 0 || !prevBtn || !nextBtn) return;
+
+      let index = 0;
+      const slideCount = slides.length;
+
+      function updateCarousel() {
+        const slideWidth = carousel.clientWidth; // 🔹 ancho visible real
+        const offset = index * slideWidth;
+        track.style.transform = `translateX(-${offset}px)`;
+      }
+
+      nextBtn.addEventListener("click", () => {
+        index = (index + 1) % slideCount;
+        updateCarousel();
+      });
+
+      prevBtn.addEventListener("click", () => {
+        index = (index - 1 + slideCount) % slideCount;
+        updateCarousel();
+      });
+
+      // Recalcular al cambiar el tamaño de la ventana
+      window.addEventListener("resize", updateCarousel);
+
+      // Iniciar en la primera imagen
+      updateCarousel();
+    });
+  }
+
+  initAllCarousels();
 });
