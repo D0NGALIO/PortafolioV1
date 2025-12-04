@@ -480,6 +480,40 @@ section{
     font-size: 3rem;
     font-weight: 800;
 }
+  /* Oculta elementos con esta clase */
+  .hidden {
+    display: none;
+  }
+
+  .desc-btn {
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+  }
+
+  .desc-btn:hover {
+    background-color: #555;
+  }
+
+.project-desc {
+  margin-top: 20px;
+  color: #000 !important;   /* o #fff !important si tu fondo es negro */
+  font-size: 16px;
+  line-height: 1.4;
+  display: none;     
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;       /* 🔹 INICIA OCULTA */
+}
+.project-desc {
+  margin-top: 20px;
+  color: #000 !important; /* o blanco según tu modal */
+  font-size: 16px;
+  line-height: 1.4;
+  display: none; /* inicia oculta */
+}
 
 /* CONTACT */
 .contact form{
@@ -685,3 +719,4 @@ section{
         font-size: 1.5rem;
     }
 }
+
