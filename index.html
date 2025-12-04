@@ -56,13 +56,13 @@
       </div>
 
       <div class="home-img">
-        <img src="Imagenes/me.png" alt="">
+        <img src="imagenes/me.png" alt="">
       </div>  
     </section>
 
     <section class="about" id="about">
       <div class="about-img">
-       <img src="Imagenes/me.png" alt="">
+       <img src="imagenes/me.png" alt="">
       </div>
 
       <div class="about-content">
@@ -118,7 +118,7 @@
 
         <!-- PROJECT 1 -->
         <div class="project-card" id="card1">
-            <img src="Imagenes/spl.gif" alt="">
+            <img src="imagenes/spl.gif" alt="">
             <h3>project 1</h3>
             <p>The Splend app helps children with type 1 diabetes understand and manage their health in a fun way.</p>
             <div class="btn open-project1">review project</div>
@@ -126,7 +126,7 @@
             
         <!-- PROJECT 2 -->
         <div class="project-card" id="card2">
-            <img src="Imagenes/Karagabi.PNG" alt="">
+            <img src="imagenes/Karagabi.PNG" alt="">
             <h3>project 2</h3>
             <p>The Karagabí project immerses participants in the history of the origin of water according to the Embera Katío culture, through a sensory experience that combines shadows and sounds to create an emotional connection with ancestral traditions.</p>
             <div class="btn open-project2">review project</div>
@@ -134,9 +134,9 @@
 
         <!-- PROJECT 3 -->
         <div class="project-card" id="card3">
-            <img src="Imagenes/Septimazo.png" alt="">
+            <img src="imagenes/Septimazo.png" alt="">
             <h3>project 3</h3>
-            <p>Your complete guide to discover the best events of the Seventh Race. Never miss a concert, exhibition or fair again!</p>
+            <p>The illustrated children's book project brings the classic fable of the lion and the mouse to life through vibrant visuals and expressive character design, presenting a gentle narrative that highlights empathy, gratitude, and the importance of small acts of kindness within an engaging and accessible storytelling format.</p>
             <div class="btn open-project3">review project</div>
 
         </div> 
@@ -167,14 +167,18 @@
       <button class="carousel-btn next">&#10095;</button>
     </div>
 
-    <p>
-      The Splend app helps children with type 1 diabetes understand and manage
-      their health in a fun way. Here you can add more details, images, or
-      a full project description.
-    </p>
+<!-- BOTÓN PARA MOSTRAR DESCRIPCIÓN -->
+<button id="show-description-btn" class="desc-btn">
+  Mostrar descripción del proyecto
+</button>
+
+<!-- DESCRIPCIÓN (inicia oculta por CSS) -->
+<p id="project-description" class="project-desc">
+Splend is an educational and interactive mobile app designed to support children with Type 1 diabetes by transforming daily health management into an engaging and accessible experience. Through friendly visual design, gamified tasks, and intuitive monitoring tools, the app helps young users understand glucose levels, build healthy habits, and develop autonomy in their treatment. Splend combines user-centered research, playful characters, and clear visual indicators to create a supportive environment where learning about health becomes both empowering and enjoyable.
+</p>
+
   </div>
 </div>
-
 
 <!-- MODAL PROJECT 2 -->
 <div id="modal-project2" class="modal">
@@ -188,25 +192,29 @@
 
       <div class="carousel-track">
         <div class="carousel-slide">
-          <img src="Imagenes/Karagabi3.PNG" alt="Karagabí screen 1">
+          <img src="imagenes/Karagabi3.PNG" alt="Karagabí screen 1">
         </div>
         <div class="carousel-slide">
-          <img src="Imagenes/Karagabi2.PNG" alt="Karagabí screen 2">
+          <img src="imagenes/Karagabi2.PNG" alt="Karagabí screen 2">
         </div>
         <div class="carousel-slide">
-          <img src="Imagenes/Karagabi1.PNG" alt="Karagabí screen 3">
+          <img src="imagenes/Karagabi1.PNG" alt="Karagabí screen 3">
         </div>
       </div>
 
       <button class="carousel-btn next">&#10095;</button>
     </div>
 
-    <p>
-      The Karagabí project immerses participants in the history of the origin 
-      of water according to the Embera Katío culture, through a sensory experience 
-      that combines shadows and sounds to create an emotional connection with 
-      ancestral traditions.
+    <!-- BOTÓN PARA MOSTRAR DESCRIPCIÓN -->
+    <button id="show-description-btn-2" class="desc-btn">
+      Mostrar descripción del proyecto
+    </button>
+
+    <!-- DESCRIPCIÓN OCULTA -->
+    <p id="project-description-2" class="project-desc">
+      Karagabí is an immersive sensory installation inspired by the Embera Katío origin myth of water, blending sound design, shadow play, and atmospheric lighting to create an emotional and culturally rich experience. The project guides participants through an evocative narrative using layered natural soundscapes, symbolic silhouettes, and spatial storytelling that highlight the spiritual connection between ancestral traditions and the environment. Karagabí demonstrates how multimedia design can preserve and reinterpret indigenous cultural knowledge through expressive and immersive digital experiences.
     </p>
+
   </div>
 </div>
 
@@ -222,10 +230,10 @@
 
       <div class="carousel-track">
         <div class="carousel-slide">
-          <img src="Imagenes/Splend.PNG" alt="Vista 1 Septimazo">
+          <img src="imagenes/2Splend (1).PNG" alt="Vista 1 Septimazo">
         </div>
         <div class="carousel-slide">
-          <img src="Imagenes/spl.gif" alt="Vista 2 Septimazo">
+          <img src="Imagenes/2Splend (2).PNG" alt="Vista 2 Septimazo">
         </div>
         <div class="carousel-slide">
           <img src="Imagenes/pantallas.jpeg" alt="Vista 3 Septimazo">
@@ -235,11 +243,14 @@
       <button class="carousel-btn next">&#10095;</button>
     </div>
 
-    <p>
-      El Septimazo is your complete guide to discover the best events along 
-      Carrera Séptima — concerts, exhibitions, fairs, and cultural shows.
-      A digital tool that helps you never miss what’s happening in the heart 
-      of Bogotá’s cultural street.
+    <!-- BOTÓN PARA MOSTRAR DESCRIPCIÓN -->
+    <button id="show-description-btn-3" class="desc-btn">
+      Mostrar descripción del proyecto
+    </button>
+
+    <!-- DESCRIPCIÓN OCULTA -->
+    <p id="project-description-3" class="project-desc">
+    The illustrated children's book project brings the classic fable of the lion and the mouse to life through vibrant visuals and expressive character design, presenting a gentle narrative that highlights empathy, gratitude, and the importance of small acts of kindness within an engaging and accessible storytelling format.
     </p>
   </div>
 </div>
@@ -316,6 +327,7 @@
    <script src="script.js"></script>
 </body>
 </html>
+
 
 
 
