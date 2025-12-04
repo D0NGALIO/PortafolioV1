@@ -92,3 +92,52 @@ document.addEventListener("DOMContentLoaded", () => {
 
   initAllCarousels();
 });
+document.addEventListener("DOMContentLoaded", function () {
+  const btnDesc = document.getElementById("show-description-btn");
+  const projectDesc = document.getElementById("project-description");
+
+  if (!btnDesc || !projectDesc) return;
+
+  btnDesc.addEventListener("click", () => {
+    if (projectDesc.style.display === "none" || projectDesc.style.display === "") {
+      projectDesc.style.display = "block";  // 🔹 MOSTRAR
+      btnDesc.textContent = "Ocultar descripción del proyecto";
+    } else {
+      projectDesc.style.display = "none";   // 🔹 OCULTAR
+      btnDesc.textContent = "Mostrar descripción del proyecto";
+    }
+  });
+});
+// PROJECT 2 – Description Button
+document.addEventListener("DOMContentLoaded", function () {
+  const btnDesc2 = document.getElementById("show-description-btn-2");
+  const projectDesc2 = document.getElementById("project-description-2");
+
+  if (!btnDesc2 || !projectDesc2) return;
+
+  btnDesc2.addEventListener("click", () => {
+    if (projectDesc2.style.display === "none" || projectDesc2.style.display === "") {
+      projectDesc2.style.display = "block";
+      btnDesc2.textContent = "Ocultar descripción del proyecto";
+    } else {
+      projectDesc2.style.display = "none";
+      btnDesc2.textContent = "Mostrar descripción del proyecto";
+    }
+  });
+});
+document.addEventListener("DOMContentLoaded", function () {
+  const btnDesc3 = document.getElementById("show-description-btn-3");
+  const projectDesc3 = document.getElementById("project-description-3");
+
+  if (!btnDesc3 || !projectDesc3) return;
+
+  btnDesc3.addEventListener("click", () => {
+    if (projectDesc3.style.display === "none" || projectDesc3.style.display === "") {
+      projectDesc3.style.display = "block";  // mostrar
+      btnDesc3.textContent = "Ocultar descripción del proyecto";
+    } else {
+      projectDesc3.style.display = "none";   // ocultar
+      btnDesc3.textContent = "Mostrar descripción del proyecto";
+    }
+  });
+});
